@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ABC Technologies | Careers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+  <a href="index.html" class="logo">ABC <span>Technologies</span></a>
+  <nav>
+    <ul>
+      <li><a th:href="@{/}">Home</a></li>
+      <li><a th:href="@{/about}">About Us</a></li>
+      <li><a th:href="@{/services}">Services</a></li>
+      <li><a th:href="@{/careers}">Careers</a></li>
+      <li><a th:href="@{/gallery}">Gallery</a></li>
+      <li><a th:href="@{/contact}">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2 class="section-title">Careers at ABC Technologies</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>DevOps Engineer</h3>
+      <p>Own our CI/CD pipelines, container orchestration, and monitoring stack.</p>
+    </div>
+    <div class="card">
+      <h3>Frontend Developer</h3>
+      <p>Build fast, accessible interfaces using modern HTML/CSS/JS.</p>
+    </div>
+    <div class="card">
+      <h3>Site Reliability Engineer</h3>
+      <p>Keep our services healthy using Nagios, Graphite, and Grafana.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 ABC Technologies. All rights reserved.
+</footer>
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>

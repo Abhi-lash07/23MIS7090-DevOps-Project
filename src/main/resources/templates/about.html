@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ABC Technologies | About Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+  <a href="index.html" class="logo">ABC <span>Technologies</span></a>
+  <nav>
+    <ul>
+      <li><a th:href="@{/}">Home</a></li>
+      <li><a th:href="@{/about}">About Us</a></li>
+      <li><a th:href="@{/services}">Services</a></li>
+      <li><a th:href="@{/careers}">Careers</a></li>
+      <li><a th:href="@{/gallery}">Gallery</a></li>
+      <li><a th:href="@{/contact}">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2 class="section-title">About ABC Technologies</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Our Story</h3>
+      <p>Founded to help businesses modernize their digital presence, ABC Technologies has
+         grown into a trusted partner for web, cloud, and DevOps solutions.</p>
+    </div>
+    <div class="card">
+      <h3>Our Mission</h3>
+      <p>To deliver reliable, secure, and continuously improving software through
+         automation and collaborative engineering practices.</p>
+    </div>
+    <div class="card">
+      <h3>Our Values</h3>
+      <p>Transparency, reliability, and continuous improvement guide every release we ship —
+         backed by automated testing, deployment, and monitoring.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 ABC Technologies. All rights reserved.
+</footer>
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>

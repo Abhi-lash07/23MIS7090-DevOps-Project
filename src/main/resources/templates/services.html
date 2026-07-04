@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ABC Technologies | Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+  <a href="index.html" class="logo">ABC <span>Technologies</span></a>
+  <nav>
+    <ul>
+      <li><a th:href="@{/}">Home</a></li>
+      <li><a th:href="@{/about}">About Us</a></li>
+      <li><a th:href="@{/services}">Services</a></li>
+      <li><a th:href="@{/careers}">Careers</a></li>
+      <li><a th:href="@{/gallery}">Gallery</a></li>
+      <li><a th:href="@{/contact}">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2 class="section-title">Our Services</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Web Development</h3>
+      <p>Responsive, modern websites built with HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="card">
+      <h3>Cloud & DevOps</h3>
+      <p>CI/CD pipelines, containerization with Docker, and orchestration with Kubernetes.</p>
+    </div>
+    <div class="card">
+      <h3>Monitoring & Observability</h3>
+      <p>End-to-end monitoring using Nagios, Graphite, and Grafana dashboards.</p>
+    </div>
+    <div class="card">
+      <h3>Consulting</h3>
+      <p>Advisory services to help teams adopt automated, collaborative engineering workflows.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 ABC Technologies. All rights reserved.
+</footer>
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>
